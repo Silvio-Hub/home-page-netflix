@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica";
+}
+
+body {
+    background: #141414;
+}
+
+.center {
+    max-width: 1650px;
+    margin: 0 auto;
+    padding: 0 4%;
+    background-color: rgba(0,0,0,0.7);
+    min-width: 100%;
+}
+
+
+.video-destaque {
+    position: absolute;
+    top: -20%;
+    height: -1;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1000;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+.clear {clear: both;}
+
+header {
+    padding: 0;
+}
+
+.header-left {
+    float: left;
+}
+
+.header-left img {
+    max-width: 120px;
+    position: relative;
+}
+
+.menu-header {
+    position: relative;
+    top: -25px;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.menu-header li {
+    display: inline-block;
+    margin-right: 14px;
+}
+
+.menu-header a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-right {
+    margin-top: 30px;
+    float: right;
+    position: relative;
+}
+
+.search,
+.notification {
+    display: inline-block;
+    position: relative;
+}
+
+.notification {
+    position: relative;
+}
+
+.circle-notification {
+    position: absolute;
+    right: 0;
+    top: -7px;
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    background: #E50914;
+    text-align: center;   
+}
+
+.circle-notification span {
+    font-size: 12px;
+    color: white;
+    vertical-align: 14px;
+}
+
+.header-right i {
+    margin: 0 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.header-right a {
+    color: white;
+    text-decoration: none;
+}
+
+section.destaque {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 600px;
+    position: absolute;
+    z-index: 1;
+}
+
+
+.texto-destaque {
+    color: white;
+    z-index: 3;
+    position: relative;
+    margin-top: 200px;
+    margin-left: 4%;
+}
+
+
+.texto-destaque h3 {
+    margin: 20px 0;
+    font-size: 30px;
+}
+
+.texto-destaque p {
+    font-size: 20px;
+}
+
+.texto-destaque a {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 15px 40px;
+    font-size: 23px;
+    display: inline-block;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+
+#button {
+    padding: 15px 60px;
+    background-color: rgba(100,100,100,0.3);
+    color: white;
+    margin-top: 30px;
+}
+
+.texto-destaque a:hover {
+    background: #C6C0C5;
+}
+
+#button:hover {
+    background-color: rgba(80,80,80,0.3);
+}
+
+
+
+.container-titulo-controles {
+    display: flex;
+    justify-content: left;
+    color: white;
+    font-size: 25px;
+    margin-top: 33%;
+    margin-left: 4%;
+}
+
+
+.lista-principal{
+    margin-bottom: 70px;
+
+}
+
+.container-principal {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.container-principal .flecha-esquerda,
+.container-principal .flecha-direita {
+    position: absolute;
+    border: none;
+    background: rgba(0,0,0,0.1);
+    font-size: 40px;
+    height: 83%;
+    /* top: calc(70% - 35%); */
+    line-height: 40px;
+    width: 50px;
+    color: white;
+    cursor: pointer;
+    z-index: 500;
+    transition: .2s ease all;
+    margin-left: 4%;
+}
+
+.container-principal .flecha-esquerda:hover,
+.container-principal .flecha-direita:hover {
+    background: rgba(0,0,0,0.2);
+    font-size: 60px;
+}
+
+.container-principal .flecha-esquerda {
+    left: 0;
+}
+
+.container-principal .flecha-direita {
+    right: 0;
+}
+
+.container-carrosel {
+    display: flex;
+    width: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    margin-left: 4%;
+    /* flex-wrap: nowrap; */
+}
+
+.box-filmes {
+    height: 170px;
+    width: 300px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.container-carrosel img:hover {
+    transform: rotateY(130deg);
+    transform: scale3d(1.2, 1.2, 1.2);
+    transition-duration: 1s;
+}
+
+
+
+@media screen and (max-width:700px) {
+    .menu-header{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        align-items: center;
+    }
+
+    .header-left {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .header-right {
+        font-size: 0;
+    }
+
+    .header-right i {
+        font-size: 15px;
+    }
+
+    .logo-marca {
+        left: 0;
+        top: 0;
+        width: 50%;
+        height: 50%;
+    }
+
+    .texto-destaque h3 {
+        font-size: 20px;
+    }
+    .texto-destaque p{
+        font-size: 15;
+    }
+
+    .texto-destaque a {
+        padding: 15px 40px;
+        font-size: 18px;
+    }
+
+    .container-titulo-controles {
+        margin-top: 75%;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .header-right i {
+        font-size: 0;
+    }
+
+    .circle-notification {
+        width: 0;
+    }
+
+    .circle-notification span {
+        font-size: 0; 
+    }
+
+    .texto-destaque h3 {
+        font-size: 15px;
+    }
+    .texto-destaque p {
+        font-size: 10;
+    }
+
+    .texto-destaque a {
+        padding: 15px 40px;
+        font-size: 18px;
+    }
+
+    .texto-destaque a {
+        padding: 15px 150px;    
+    } 
+
+    #button {
+        padding: 15px 105px; 
+    }
+}
