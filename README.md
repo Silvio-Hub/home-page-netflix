@@ -16,7 +16,7 @@ CLONE-DA-HOME-PAGE-DO-NETFLIX
 </p>
 
 <div>
-  <img src = "IMAGE_1_URL" alt = "demo" height = "425">
+  <img src = "https://github.com/Silvio-Hub/home-page-netflix/blob/master/img/ezgif.com-gif-maker.gif?raw=true" alt = "gif-da-pagina" height = "425">
   
 </div>
 
