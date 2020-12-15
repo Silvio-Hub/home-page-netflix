@@ -1,3 +1,4 @@
+
 <h1 align = "center">
 <br>
   <img src = "https://github.com/Silvio-Hub/home-page-netflix/blob/master/img/netflixLogo.png?raw=true" alt = "CLONE-HOME-PAGE-NETFLIX" width = "200">
